@@ -1,0 +1,19 @@
+{
+  "name": "JS-Nightwatch.js",
+  "version": "0.0.0",
+  "description": "Parallel tests nigtwatch",
+  "main": "",
+  "scripts": {
+    "testchrome": "./node_modules/.bin/nightwatch -e chrome tests",
+    "testfirefox": "./node_modules/.bin/nightwatch -e firefox tests",
+    "testedge": "./node_modules/.bin/nightwatch -e internet_explorer_edge tests",
+    "testemulator": "./node_modules/.bin/nightwatch -e android_s4_emulator tests"
+  },
+  "devDependencies": {
+    "saucelabs": "1.4.0",
+    "nightwatch": "0.9.16"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.2"
+  }
+}
