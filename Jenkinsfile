@@ -1,7 +1,7 @@
 node {
   stage 'Build'
     checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '31e54e4d-4fd4-48dc-b6ba-108677c781a8', url: 'https://github.com/saucelabs-sample-test-frameworks/JS-Nightwatch.js']]])    
-    nodejs {
+    nodejs ('latest') {
        sh 'npm install'
     }
 
