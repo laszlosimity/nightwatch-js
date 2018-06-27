@@ -37,7 +37,8 @@
 
       "desiredCapabilities": {
         "javascriptEnabled": true,
-        "acceptSslCerts": true
+        "acceptSslCerts": true,
+        "extendedDebugging": true
       }
     },
 
